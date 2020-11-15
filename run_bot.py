@@ -21,8 +21,8 @@ def start_message(message):
                      [4] Кнопка "Известная личность"
                      [5] Кнопка "Ваш преподаватель по проектному программированию"
                      """)
-    user_id = message.from_user.id
-    controller[user_id] = 'start'
+    x = message.from_user.id
+    controller[x] = 'start'
 
 
 @bot.message_handler(content_types=['text'])
