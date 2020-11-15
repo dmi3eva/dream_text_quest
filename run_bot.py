@@ -1,6 +1,5 @@
 import telebot
-
-API_TOKEN = 'YOUR_TOKEN_SHOULD_BE_HERE'  # TODO: Вставьте сюда API_TOKEN вашего бота
+from config import API_TOKEN
 
 bot = telebot.TeleBot(API_TOKEN)
 controller = {}
@@ -21,8 +20,8 @@ def start_message(message):
                      [4] Кнопка "Известная личность"
                      [5] Кнопка "Ваш преподаватель по проектному программированию"
                      """)
-    user_id = message.from_user.id
-    controller[user_id] = 'start'
+    x = message.from_user.id
+    controller[x] = 'start'
 
 
 @bot.message_handler(content_types=['text'])
