@@ -1,7 +1,6 @@
 import telebot
 
-# API_TOKEN = 'YOUR_TOKEN_SHOULD_BE_HERE'  # TODO: Вставьте сюда API_TOKEN вашего бота
-API_TOKEN = '1214065756:AAF6nAP4ydzNiuJHbm9VqnAcxUuDAaniJC8'
+API_TOKEN = 'YOUR_TOKEN_SHOULD_BE_HERE'  # TODO: Вставьте сюда API_TOKEN вашего бота
 
 bot = telebot.TeleBot(API_TOKEN)
 controller = {}
